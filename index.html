@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Elite | Restaurant Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">L'Elite<span>Dining</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">The Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="btn-login" onclick="toggleModal('login')">Login</button>
+            <button class="btn-register" onclick="toggleModal('register')">Register</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="eyebrow">Established 2026</span>
+                <h1>A Masterclass in Flavor</h1>
+                <p>Welcome to the management portal of the city's finest culinary destination.</p>
+                <a href="#menu" class="cta-gold">View the Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2 class="section-title">Culinary Artistry</h2>
+        <p class="section-subtitle">A glimpse into our signature dishes and decorative dining halls.</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800" alt="Gourmet Dish">
+                <div class="card-info">
+                    <h3>Signature Entrées</h3>
+                    <p>Crafted by Master Chefs</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1550966842-28c2e200ec85?auto=format&fit=crop&w=800" alt="Dining Room">
+                <div class="card-info">
+                    <h3>The Golden Hall</h3>
+                    <p>Luxury Dining Ambience</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800" alt="Fine Dining">
+                <div class="card-info">
+                    <h3>Private Tasting</h3>
+                    <p>Exclusive Member Suites</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-container">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>L'Elite Dining isn't just a restaurant; it's an experience. Founded with a passion for Mediterranean fusion, our management system ensures that every reservation, ingredient, and guest preference is handled with five-star precision.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-item">📍 44 Gourmet Blvd, Paris District</div>
+            <div class="contact-item">📞 +1 (555) ELITE-RES</div>
+            <div class="contact-item">✉️ management@myis-f3dd6.web.app</div>
+        </div>
+    </section>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal()">&times;</span>
+            <h2 id="modalTitle">Login</h2>
+            <form id="authForm">
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Passphrase" required>
+                <button type="submit" class="cta-gold">Proceed to Portal</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
